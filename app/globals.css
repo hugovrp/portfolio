@@ -1,28 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white-background: #F7F4EF;
+  --dark-background: #0c1109;
+  --accent: #E56A3D;
+  --accent-hover: #D4552C;
+  --gray: #4B5563;
+  --black-font: #111111;
+  --white-font: #F8FAFC;
+  --light-gray: #D8D2CA;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-white-background: var(--white-background);
+  --color-dark-background: var(--dark-background);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-gray: var(--gray);
+  --color-black-font: var(--black-font);
+  --color-white-font: var(--white-font);
+  --color-light-gray: var(--light-gray);
 }
-
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-*/
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--white-background);
+  color: var(--black-font);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+q {
+  font-family: var(--font-title);
+}
+
+.font-title {
+  font-family: var(--font-title);
 }
