@@ -1,4 +1,3 @@
-import Main from "@/components/main";
 import About from "@/components/about";
 import Header from "@/components/Header";
 import Contact from "@/components/contact";
@@ -10,7 +9,6 @@ export interface LinkProps {
 }
 
 export const links = [
-  {name: 'Início', sectionRoute: '#main-sec'},
   {name: 'Sobre', sectionRoute: '#about-sec'},
   {name: 'Projetos', sectionRoute: '#projects-sec'},
   {name: 'Experiência', sectionRoute: '#experience-sec'},
@@ -23,11 +21,10 @@ export default function Home() {
       <Header/>
 
       <div className="bg-white-background text-black-font">
-        <Main id="main-sec"/>
+        <About id="about-sec"/>
       </div>
 
       <div className="bg-dark-background text-white-font">
-        <About id="about-sec"/>
         <Projects id="project-sec"/>
         <Experience id="experience-sec"/>
         <Contact id="contact-sec"/>

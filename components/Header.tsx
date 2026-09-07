@@ -19,7 +19,7 @@ export default function Header() {
       <div className="relative flex justify-between container mx-auto py-3 items-center ">
         <div className="cursor-pointer font-bold text-[22px]">
           <Link 
-            href={"#main-sec"} 
+            href={"#about-sec"} 
             onClick={() => setIsOpen(false)}
           >
             HV
