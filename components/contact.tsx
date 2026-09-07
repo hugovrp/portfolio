@@ -3,7 +3,7 @@ import { LinkProps } from "@/app/page";
 
 export default function Contact({ id }: LinkProps) {
   return (
-    <div id={id} className="container mx-auto">
+    <div id={id} className="container mx-auto px-6 py-4">
       <div className="flex justify-between">
         <h1>Vamos construir algo <span className="text-accent">incrível</span> juntos?</h1>
 

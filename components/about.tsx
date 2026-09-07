@@ -4,7 +4,7 @@ import { LinkProps } from "@/app/page";
 
 export default function About({ id }: LinkProps) {
   return (
-    <main id={id} className="container mx-auto px-4 flex items-center">
+    <main id={id} className="container mx-auto px-6 pt-4 flex items-center">
       <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
 
        <div className="">
@@ -57,7 +57,6 @@ export default function About({ id }: LinkProps) {
         </div>
 
         <div className="relative h-[400px] w-full flex items-center justify-center">
-
           <svg
             className="absolute right-0 top-0 w-full h-full"
             viewBox="0 0 600 500"
@@ -91,7 +90,6 @@ export default function About({ id }: LinkProps) {
             height={800}
             className="relative z-10 h-full w-auto object-contain object-bottom"
           />
-
         </div>
       </div>
     </main>

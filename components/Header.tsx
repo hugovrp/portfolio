@@ -17,7 +17,7 @@ export default function Header() {
       )}
 
       <div className="relative flex justify-between container mx-auto py-3 items-center ">
-        <div className="cursor-pointer font-bold text-[22px]">
+        <div className="cursor-pointer font-bold text-[32px]">
           <Link 
             href={"#about-sec"} 
             onClick={() => setIsOpen(false)}
