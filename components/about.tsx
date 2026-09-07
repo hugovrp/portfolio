@@ -3,7 +3,7 @@ import { LinkProps } from "@/app/page";
 
 export default function About({ id }: LinkProps) {
   return (
-    <section id={id}>
+    <section id={id} className="container mx-auto">
       <div>
         <p>SOBRE MIM</p>
         <h2>Desenvolvedor Web</h2>

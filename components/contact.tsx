@@ -3,7 +3,7 @@ import { LinkProps } from "@/app/page";
 
 export default function Contact({ id }: LinkProps) {
   return (
-    <div className="">
+    <div id={id} className="container mx-auto">
       <div className="flex justify-between">
         <h1>Vamos construir algo <span className="text-accent">incrível</span> juntos?</h1>
 

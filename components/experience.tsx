@@ -2,7 +2,7 @@ import { LinkProps } from "@/app/page";
 
 export default function Experience({ id }: LinkProps) {
   return (
-    <div id={id}>
+    <div id={id} className="container mx-auto">
       <section>
         <div>
           <h2>Experiência</h2>
