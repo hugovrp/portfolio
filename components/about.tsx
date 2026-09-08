@@ -75,10 +75,10 @@ export default function About({ id }: LinkProps) {
 
             <path
               fill="#f5cca8"
-              d="M434.5,447Q297,914,751.5,900Q-6,700,18,430Q90,0,400.5,29Q547,20,610.5,209Q747,590,604.5,617Z"
+              d="M531.5,447Q297,914,311.5,400Q-87,700,12,410Q190,0,390.5,19Q547,25,600.5,119Q947,990,604.5,617Z"
             />
 
-            <rect x="320" y="100" width="240" height="330" fill="url(#dotPattern)" />
+            <rect x="320" y="100" width="280" height="330" fill="url(#dotPattern)" />
             <rect x="100" y="280" width="180" height="200" fill="url(#dotPattern)" />
           </svg>
 

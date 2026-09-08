@@ -7,6 +7,17 @@ import { links } from "@/app/page";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    if (isOpen) 
+      document.body.style.overflow = "hidden";
+    else 
+      document.body.style.overflow = "";
+    
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <div className="px-4 py-2 sticky top-0 z-50 bg-white-background">
       {isOpen && (

@@ -27,6 +27,7 @@ export default function Contact({ id }: LinkProps) {
             {contact.map( (cont, contIndex) => (
               <Link
                 href={cont.link}
+                target="_blank" rel="noopener noreferrer"
                 className="inline-flex gap-4 items-center px-6 py-3 text-dark-background bg-white-font rounded-lg w-fit
                           duration-300 transition-all hover:opacity-80 hover:gap-6 hover:-translate-y-[1.5px] shrink-0"
                 key={contIndex}
@@ -43,14 +44,16 @@ export default function Contact({ id }: LinkProps) {
       
         <div className="pt-10 md:pt-0 md:px-10 lg:px-16">
           <h3 
-            className="text-[18px] font-[600] pb-6"
+            className="inline-flex items-center gap-2 text-[18px] font-[600] pb-6"
           >
+            <span className="content-[''] block w-[6px] h-[6px] bg-accent rounded-full"/>
             Redes Sociais
           </h3>
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-6 ml-3">
             {social.map( (soc, socIndex) => (
               <Link
                 href={soc.link}
+                target="_blank" rel="noopener noreferrer"
                 className="hover:opacity-80 hover:-translate-y-[1.5px] shrink-0 duration-300 transition-all"  
                 key={socIndex}
               >

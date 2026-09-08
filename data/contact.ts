@@ -1,15 +1,19 @@
+const phoneNumber = process.env.PHONE_NUMBER;
+const message = 'Olá, Hugo! Vi seu portfólio e gostaria de conversar sobre um possível projeto. Podemos conversar?';
+const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
 export const contact = [
   {
     icon: '/icons/contact/whatsapp.svg',
     name: 'WhatsApp', 
     description: 'WhatsApp',
-    link: '',
+    link: whatsappUrl,
   },
   {
     icon: '/icons/contact/gmail.svg',
     name: 'Gmail', 
     description: 'Enviar E-mail',
-    link: '',
+    link: 'mailto:',
   },
 ];
 
