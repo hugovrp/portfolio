@@ -7,24 +7,24 @@ export default function About({ id }: LinkProps) {
     <main id={id} className="container mx-auto px-6 pt-4 flex items-center">
       <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
 
-       <div className="">
-          <p className="text-[18px] tracking-wide">
+       <div>
+          <p className="md:text-[18px] tracking-wide">
             Olá! Eu sou
           </p>
 
           <h1 className="text-[32px] lg:text-[48px] font-bold tracking-wider">
             Hugo 
-            <span className="text-accent"> Vinícius</span>
+            <span className="text-accent"> Rodrigues</span>
           </h1>
 
-          <p className="text-[18px] flex items-center gap-2 font-medium tracking-wide">
+          <p className="md:text-[18px] flex items-center gap-2 font-medium tracking-wide">
             Desenvolvedor Web
             <span className="block w-8 h-[2px] bg-accent"></span>
           </p>
           <p className="pt-6 max-w-xl leading-relaxed">
-            Desenvolvo aplicações modernas, responsivas e escaláveis,
-            com foco em experiência do usuário, performance e
-            boas práticas de desenvolvimento.
+            Focado na criação de aplicações modernas, responsivas e intuitivas. 
+            Busco unir funcionalidade, desempenho e boa experiência do usuário para transformar ideias em soluções digitais eficientes. 
+            Estou sempre aprendendo, evoluindo e buscando novos desafios para crescer profissionalmente.
           </p>
 
           <div className="flex flex-wrap gap-4 py-8">
@@ -56,7 +56,7 @@ export default function About({ id }: LinkProps) {
           </div>
         </div>
 
-        <div className="hidden lg:block relative h-[400px] w-full flex items-center justify-center">
+        <div className="hidden lg:block relative h-[450px] w-full flex items-center justify-center">
           <svg
             className="absolute right-0 top-0 w-full h-full"
             viewBox="0 0 600 500"

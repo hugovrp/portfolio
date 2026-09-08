@@ -8,10 +8,10 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="p-4 sticky top-0 z-50 bg-white-background">
+    <div className="px-4 py-2 sticky top-0 z-50 bg-white-background">
       {isOpen && (
         <div
-          className="fixed top-[80px] left-0 right-0 bottom-0 bg-black/40 backdrop-blur-sm z-40 lg:hidden"
+          className="fixed top-[70px] left-0 right-0 bottom-0 bg-black/40 backdrop-blur-sm z-40 lg:hidden"
           onClick={() => setIsOpen(false)}
         />
       )}
@@ -22,7 +22,7 @@ export default function Header() {
             href={"#about-sec"} 
             onClick={() => setIsOpen(false)}
           >
-            HV
+            HR
             <span className="text-accent text-[30px]">.</span>
           </Link>
         </div>

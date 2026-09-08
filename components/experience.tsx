@@ -53,7 +53,10 @@ export default function Experience({ id }: LinkProps) {
 
           <div className="flex flex-col gap-6">
             {education.map( (edu, eduIndex) => (
-              <div className="flex gap-6 p-4 border border-light-gray/80 rounded-lg items-center">
+              <div 
+                key={eduIndex}
+                className="flex gap-6 p-4 border border-light-gray/80 rounded-lg items-center"
+              >
                 <div className="inline-block bg-accent p-2 rounded-full h-full">
                   <Image src={edu.icon} alt={edu.class} width={50} height={50} loading="eager"/>
                 </div>
@@ -78,12 +81,12 @@ export default function Experience({ id }: LinkProps) {
       </section>
       
       <section>
-        <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-8">
+        <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[18px]">
           Tecnologias
           <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
         </h2>
 
-        <div className="flex gap-6 flex-wrap md:justify-center">
+        <div className="flex gap-6 flex-wrap justify-center">
           {technologies.map( (tec, tecIndex) => (
             <div
               className="text-center p-4 flex flex-col gap-4 items-center w-[120px]"

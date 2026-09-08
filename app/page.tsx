@@ -25,11 +25,9 @@ export default function Home() {
       </div>
 
       <div className="bg-dark-background text-white-font">
-        <Projects id="project-sec"/>
+        <Projects id="projects-sec"/>
         <Experience id="experience-sec"/>
         <Contact id="contact-sec"/>
-
-        <p className="text-center sm:text-left px-4 md:px-0 container mx-auto py-4 text-white-font break-words">@ 2026 Hugo Vinícius. Todos os direitos reservados.</p>
       </div> 
     </div>
   );
