@@ -11,7 +11,7 @@ export default function Experience({ id }: LinkProps) {
         <div
           data-aos="fade-right" data-aos-once="true"
         >
-          <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[18px]">
+          <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[1.125rem]">
             Experiência
             <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
           </h2>
@@ -34,7 +34,7 @@ export default function Experience({ id }: LinkProps) {
                   </span>
                 </h4>
 
-                <p className="text-[14px] mt-1">
+                <p className="text-[0.875rem] mt-1">
                   {exp.period}
                 </p>
 
@@ -50,7 +50,7 @@ export default function Experience({ id }: LinkProps) {
         <div
           data-aos="fade-up" data-aos-once="true"
         >
-          <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[18px]">
+          <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[1.125rem]">
             Formação
             <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
           </h2>
@@ -66,15 +66,15 @@ export default function Experience({ id }: LinkProps) {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <h4 className="text-[18px] font-bold pb-2">
+                  <h4 className="text-[1.125rem] font-bold pb-2">
                     {edu.class}
                   </h4>
 
-                  <p className="text-[16px]">
+                  <p className="text-[1rem]">
                     {edu.institution}
                   </p>
 
-                  <p className="text-[15px]">
+                  <p className="text-[0.9375rem]">
                     {edu.period}
                   </p>
                 </div>
@@ -87,7 +87,7 @@ export default function Experience({ id }: LinkProps) {
       <section
         data-aos="fade-up" data-aos-once="true"
       >
-        <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[18px]">
+        <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[1.125rem]">
           Tecnologias
           <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
         </h2>

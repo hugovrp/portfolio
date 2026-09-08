@@ -10,7 +10,7 @@ export default function Projects({ id }: LinkProps) {
       data-aos="fade-up" data-aos-once="true"
       className="container mx-auto px-6 py-8"
     >
-      <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-8 text-[18px]">
+      <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-8 text-[1.125rem]">
         Projetos
         <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
       </h2>
@@ -27,15 +27,16 @@ export default function Projects({ id }: LinkProps) {
                 alt={project.name}
                 fill
                 sizes="220px"
+                fetchPriority="high"
                 className="object-cover"
               />
 
               {project.isFinished ? (
-                <span className="absolute left-2 top-2 font-bold text-[20px] text-[#008000] border border-[#008000] bg-[#80EF80] rounded-full py-.5 px-1.5 shadow">
+                <span className="absolute left-2 top-2 font-bold text-[1.25rem] text-[#008000] border border-[#008000] bg-[#80EF80] rounded-full py-.5 px-1.5 shadow">
                   ☑
                 </span>
               ) : (
-                <span className="absolute left-2 top-2 font-bold text-[20px] text-[#777700] border border-[#777700] bg-[#FFFF70] rounded-full py-.5 px-1.5 shadow">
+                <span className="absolute left-2 top-2 font-bold text-[1.25rem] text-[#777700] border border-[#777700] bg-[#FFFF70] rounded-full py-.5 px-1.5 shadow">
                   ☐
                 </span>
               )}
@@ -46,7 +47,7 @@ export default function Projects({ id }: LinkProps) {
                 {project.topics.map( (topic, topicIndex) => (
                   <p
                     key={topicIndex}
-                    className="text-[14px] bg-light-gray/20 py-1 px-2 rounded-md"
+                    className="text-[0.875rem] bg-light-gray/20 py-1 px-2 rounded-md"
                   >
                     {topic}
                   </p>

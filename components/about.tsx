@@ -9,16 +9,16 @@ export default function About({ id }: LinkProps) {
        <div
         data-aos="fade-right" data-aos-once="true"
        >
-          <p className="md:text-[18px] tracking-wide">
+          <p className="md:text-[1.125rem] tracking-wide">
             Olá! Eu sou
           </p>
 
-          <h1 className="text-[32px] lg:text-[48px] font-bold tracking-wider">
+          <h1 className="text-[2rem] lg:text-[3rem] font-bold tracking-wider">
             Hugo 
             <span className="text-accent"> Rodrigues</span>
           </h1>
 
-          <p className="md:text-[18px] flex items-center gap-2 font-medium tracking-wide">
+          <p className="md:text-[1.125rem] flex items-center gap-2 font-medium tracking-wide">
             Desenvolvedor Web
             <span className="block w-8 h-[2px] bg-accent"></span>
           </p>

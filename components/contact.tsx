@@ -10,19 +10,19 @@ export default function Contact({ id }: LinkProps) {
       data-aos="fade-right" data-aos-once="true"
       className="container mx-auto px-6 pb-12 pt-8 sm:pt-0"
     >
-      <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[18px]">
+      <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[1.125rem]">
         Contato
         <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="md:border-r md:border-light-gray/80 md:pr-6">
           <h3 
-            className="text-[32px] font-[600]"
+            className="text-[2rem] font-[600]"
           >
             Vamos construir algo <span className="text-accent">Incrível</span> juntos?
           </h3>
           <p
-            className="text-[20px] leading-relaxed"
+            className="text-[1.25rem] leading-relaxed"
           >
             Estou disponível para novos projetos e oportunidades.
           </p>
@@ -48,7 +48,7 @@ export default function Contact({ id }: LinkProps) {
       
         <div className="pt-10 md:pt-0 md:px-10 lg:px-16">
           <h3 
-            className="inline-flex items-center gap-2 text-[18px] font-[600] pb-6"
+            className="inline-flex items-center gap-2 text-[1.125rem] font-[600] pb-6"
           >
             <span className="content-[''] block w-[8px] h-[8px] bg-accent rounded-full"/>
             Redes Sociais

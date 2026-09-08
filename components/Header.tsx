@@ -31,13 +31,13 @@ export default function Header() {
         data-aos="fade-down" data-aos-once="true"
         className="relative flex justify-between container mx-auto pt-2 items-center"
       >
-        <div className="cursor-pointer font-bold text-[32px]">
+        <div className="cursor-pointer font-bold text-[2rem]">
           <Link 
             href={"#about-sec"} 
             onClick={() => setIsOpen(false)}
           >
             HR
-            <span className="text-accent text-[30px]">.</span>
+            <span className="text-accent text-[1.875rem]">.</span>
           </Link>
         </div>
 
@@ -71,8 +71,8 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               key={index}
               className=" 
-                text-[18px] tracking-wide p-2 
-                hover:text-accent-hover lg:text-[16px] lg:p-3
+                text-[1.125rem] tracking-wide p-2 
+                hover:text-accent-hover lg:text-[1rem] lg:p-3
                 lg:after:content-[''] lg:after:block lg:after:h-[2px] lg:after:bg-accent
                 lg:after:bottom-0 lg:after:left-0 lg:after:transition-all lg:after:duration-300 lg:after:w-0 lg:hover:after:w-full"
             >
