@@ -2,6 +2,7 @@ import Image from "next/image";
 import { LinkProps } from "@/app/page";
 import { education } from "@/data/education";
 import { experience } from "@/data/experience";
+import { technologies } from "@/data/technologies";
 
 export default function Experience({ id }: LinkProps) {
   return (
@@ -25,8 +26,8 @@ export default function Experience({ id }: LinkProps) {
               <div>
                 <h4 className="inline-flex gap-3 items-center font-bold">
                   {exp.role}
-                  <span className="content-[''] block w-[4px] h-[4px] bg-light-gray/60"/>
-                  <span>
+                  <span className="content-[''] block w-[4px] h-[4px] bg-light-gray/90"/>
+                  <span className="text-light-gray/90">
                     {exp.enterprise}
                   </span>
                 </h4>
@@ -54,7 +55,7 @@ export default function Experience({ id }: LinkProps) {
             {education.map( (edu, eduIndex) => (
               <div className="flex gap-6 p-4 border border-light-gray/80 rounded-lg items-center">
                 <div className="inline-block bg-accent p-2 rounded-full h-full">
-                  <Image src={edu.icon} alt={edu.class} width={50} height={50} loading="eager" />
+                  <Image src={edu.icon} alt={edu.class} width={50} height={50} loading="eager"/>
                 </div>
 
                 <div className="flex flex-col gap-1">
@@ -81,6 +82,18 @@ export default function Experience({ id }: LinkProps) {
           Tecnologias
           <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
         </h2>
+
+        <div className="flex gap-6 flex-wrap md:justify-center">
+          {technologies.map( (tec, tecIndex) => (
+            <div
+              className="text-center p-4 flex flex-col gap-4 items-center w-[120px]"
+              key={tecIndex}
+            >
+              <Image src={tec.image} alt={tec.name} width={50} height={50} loading="eager"/>
+              <p className="font-bold tracking-wide">{tec.name}</p>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );

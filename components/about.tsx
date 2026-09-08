@@ -12,7 +12,7 @@ export default function About({ id }: LinkProps) {
             Olá! Eu sou
           </p>
 
-          <h1 className="text-[48px] lg:text-[64px] font-bold tracking-wider">
+          <h1 className="text-[32px] lg:text-[48px] font-bold tracking-wider">
             Hugo 
             <span className="text-accent"> Vinícius</span>
           </h1>
@@ -56,7 +56,7 @@ export default function About({ id }: LinkProps) {
           </div>
         </div>
 
-        <div className="relative h-[400px] w-full flex items-center justify-center">
+        <div className="hidden lg:block relative h-[400px] w-full flex items-center justify-center">
           <svg
             className="absolute right-0 top-0 w-full h-full"
             viewBox="0 0 600 500"
@@ -78,7 +78,7 @@ export default function About({ id }: LinkProps) {
               d="M434.5,447Q297,914,751.5,900Q-6,700,18,430Q90,0,400.5,29Q547,20,610.5,209Q747,590,604.5,617Z"
             />
 
-            <rect x="370" y="100" width="180" height="260" fill="url(#dotPattern)" />
+            <rect x="320" y="100" width="240" height="330" fill="url(#dotPattern)" />
             <rect x="100" y="280" width="180" height="200" fill="url(#dotPattern)" />
           </svg>
 
@@ -88,7 +88,7 @@ export default function About({ id }: LinkProps) {
             loading="eager"
             width={600}
             height={800}
-            className="relative z-10 h-full w-auto object-contain object-bottom"
+            className="xl:ml-4 relative z-10 h-full w-auto object-cover object-bottom"
           />
         </div>
       </div>

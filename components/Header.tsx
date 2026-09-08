@@ -8,15 +8,15 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-50 bg-white-background">
+    <div className="p-4 sticky top-0 z-50 bg-white-background">
       {isOpen && (
         <div
-          className="fixed top-[75px] left-0 right-0 bottom-0 bg-black/40 backdrop-blur-sm z-40 lg:hidden"
+          className="fixed top-[80px] left-0 right-0 bottom-0 bg-black/40 backdrop-blur-sm z-40 lg:hidden"
           onClick={() => setIsOpen(false)}
         />
       )}
 
-      <div className="relative flex justify-between container mx-auto py-3 items-center ">
+      <div className="relative flex justify-between container mx-auto pt-2 items-center ">
         <div className="cursor-pointer font-bold text-[32px]">
           <Link 
             href={"#about-sec"} 
@@ -46,7 +46,7 @@ export default function Header() {
           </button>
 
         <nav 
-          className={`absolute z-50 top-full right-0 w-[50%] bg-white-background flex flex-col items-end px-6 gap-y-2 transition-all duration-300 rounded-lg
+          className={`absolute z-50 top-full right-0 w-[85%] sm:w-[50%] bg-white-background flex flex-col items-end px-6 gap-y-2 transition-all duration-300 rounded-lg
             ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-3'}
             lg:static lg:translate-y-0 lg:flex-row lg:w-auto lg:bg-transparent lg:opacity-100 lg:visible lg:px-0 lg:gap-x-4 
           `}

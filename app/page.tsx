@@ -29,8 +29,8 @@ export default function Home() {
         <Experience id="experience-sec"/>
         <Contact id="contact-sec"/>
 
-        <p className="container mx-auto py-4 text-white-font">@ 2026 Hugo Vinícius. Todos os direitos reservados.</p>
-      </div>
+        <p className="text-center sm:text-left px-4 md:px-0 container mx-auto py-4 text-white-font break-words">@ 2026 Hugo Vinícius. Todos os direitos reservados.</p>
+      </div> 
     </div>
   );
 }
