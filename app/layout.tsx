@@ -62,7 +62,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${roboto.variable} ${ibmPlexSerif.variable} h-full antialiased`}
     >
       <body>
-        <AosSetup />
         <main>
           {children}
         </main>
