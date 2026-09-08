@@ -27,7 +27,10 @@ export default function Header() {
         />
       )}
 
-      <div className="relative flex justify-between container mx-auto pt-2 items-center ">
+      <div 
+        data-aos="fade-down" data-aos-once="true"
+        className="relative flex justify-between container mx-auto pt-2 items-center"
+      >
         <div className="cursor-pointer font-bold text-[32px]">
           <Link 
             href={"#about-sec"} 

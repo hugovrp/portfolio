@@ -5,7 +5,11 @@ import { contact, social } from "@/data/contact";
 
 export default function Contact({ id }: LinkProps) {
   return (
-    <div id={id} className="container mx-auto px-6 pb-12 pt-8 sm:pt-0">
+    <div 
+      id={id} 
+      data-aos="fade-right" data-aos-once="true"
+      className="container mx-auto px-6 pb-12 pt-8 sm:pt-0"
+    >
       <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[18px]">
         Contato
         <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
@@ -46,10 +50,10 @@ export default function Contact({ id }: LinkProps) {
           <h3 
             className="inline-flex items-center gap-2 text-[18px] font-[600] pb-6"
           >
-            <span className="content-[''] block w-[6px] h-[6px] bg-accent rounded-full"/>
+            <span className="content-[''] block w-[8px] h-[8px] bg-accent rounded-full"/>
             Redes Sociais
           </h3>
-          <div className="flex flex-wrap gap-6 ml-3">
+          <div className="flex flex-wrap gap-6 ml-3.5">
             {social.map( (soc, socIndex) => (
               <Link
                 href={soc.link}

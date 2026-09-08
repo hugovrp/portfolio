@@ -5,7 +5,11 @@ import { projects } from "@/data/projects";
 
 export default function Projects({ id }: LinkProps) {
   return (
-    <section id={id} className="container mx-auto px-6 py-8">
+    <section 
+      id={id} 
+      data-aos="fade-up" data-aos-once="true"
+      className="container mx-auto px-6 py-8"
+    >
       <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-8 text-[18px]">
         Projetos
         <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>

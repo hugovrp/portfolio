@@ -8,7 +8,9 @@ export default function Experience({ id }: LinkProps) {
   return (
     <div id={id} className="container mx-auto px-6 py-4">
       <section className="grid grid-cols-1 gap-12 mb-12 lg:grid-cols-2">
-        <div>
+        <div
+          data-aos="fade-right" data-aos-once="true"
+        >
           <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[18px]">
             Experiência
             <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
@@ -45,7 +47,9 @@ export default function Experience({ id }: LinkProps) {
 
         </div>
         
-        <div>
+        <div
+          data-aos="fade-up" data-aos-once="true"
+        >
           <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[18px]">
             Formação
             <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
@@ -80,7 +84,9 @@ export default function Experience({ id }: LinkProps) {
         </div>
       </section>
       
-      <section>
+      <section
+        data-aos="fade-up" data-aos-once="true"
+      >
         <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-6 text-[18px]">
           Tecnologias
           <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>

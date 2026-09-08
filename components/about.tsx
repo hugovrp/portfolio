@@ -6,8 +6,9 @@ export default function About({ id }: LinkProps) {
   return (
     <main id={id} className="container mx-auto px-6 pt-4 flex items-center">
       <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
-
-       <div>
+       <div
+        data-aos="fade-right" data-aos-once="true"
+       >
           <p className="md:text-[18px] tracking-wide">
             Olá! Eu sou
           </p>
@@ -56,7 +57,10 @@ export default function About({ id }: LinkProps) {
           </div>
         </div>
 
-        <div className="hidden lg:block relative h-[450px] w-full flex items-center justify-center">
+        <div 
+          data-aos="fade-up" data-aos-once="true"
+          className="hidden lg:block relative h-[450px] w-full flex items-center justify-center"
+        >
           <svg
             className="absolute right-0 top-0 w-full h-full"
             viewBox="0 0 600 500"
@@ -88,6 +92,7 @@ export default function About({ id }: LinkProps) {
             loading="eager"
             width={600}
             height={800}
+            data-aos="fade-up" data-aos-once="true"
             className="xl:ml-4 relative z-10 h-full w-auto object-cover object-bottom"
           />
         </div>

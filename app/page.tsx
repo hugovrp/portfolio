@@ -24,7 +24,7 @@ export default function Home() {
         <About id="about-sec"/>
       </div>
 
-      <div className="bg-dark-background text-white-font">
+      <div className="bg-dark-background text-white-font" data-aos="fade-up" data-aos-once="true">
         <Projects id="projects-sec"/>
         <Experience id="experience-sec"/>
         <Contact id="contact-sec"/>
