@@ -3,6 +3,7 @@
 :root {
   --white-background: #F7F4EF;
   --dark-background: #1d1c1cf5;
+  --not-found-background: #ffe8d4;
   --accent: #ff652e;
   --accent-hover: #da4d1f;
   --gray: #4B5563;
@@ -14,6 +15,7 @@
 @theme inline {
   --color-white-background: var(--white-background);
   --color-dark-background: var(--dark-background);
+  --color-not-found-background: var(--not-found-background);
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-gray: var(--gray);
