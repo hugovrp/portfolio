@@ -1,6 +1,7 @@
 import About from "@/components/about";
-import Header from "@/components/Header";
+import Header from "@/components/header";
 import Contact from "@/components/contact";
+import AosSetup from "@/components/aosSetup";
 import Projects from "@/components/projects";
 import Experience from "@/components/experience";
 
@@ -24,7 +25,8 @@ export default function Home() {
         <About id="about-sec"/>
       </div>
 
-      <div className="bg-dark-background text-white-font" data-aos="fade-up" data-aos-once="true">
+      <div className="bg-dark-background text-white-font">
+        <AosSetup />
         <Projects id="projects-sec"/>
         <Experience id="experience-sec"/>
         <Contact id="contact-sec"/>

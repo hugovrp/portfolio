@@ -1,16 +1,24 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import { LinkProps } from "@/app/page";
-import { projects } from "@/data/projects";
+import ProjectModal from "./projectModal";
+import { projects, ProjectProps } from "@/data/projects";
 
 export default function Projects({ id }: LinkProps) {
+  const [selectedProject, setSelectedProject] = useState<ProjectProps | null>(null);
+
   return (
     <section 
       id={id} 
-      data-aos="fade-up" data-aos-once="true"
       className="container mx-auto px-6 py-8"
     >
-      <h2 className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-8 text-[1.125rem]">
+      <h2 
+        data-aos="fade-up" data-aos-once="true"
+        className="flex flex-col gap-2 uppercase tracking-widest font-bold mb-8 text-[1.125rem]"
+      >
         Projetos
         <span className="content-[''] block h-[2px] w-[32px] bottom-0 left-0 bg-accent-hover"/>
       </h2>
@@ -19,27 +27,18 @@ export default function Projects({ id }: LinkProps) {
         {projects.map( (project, index) => (
           <div
             key={index}
+            data-aos="fade-up" data-aos-once="true"
             className="flex flex-col h-full border border-light-gray/80 rounded-xl overflow-hidden transition-all duration-300"
           >
             <div className="relative h-[220px]">
               <Image
-                src={project.image}
+                src={project.gallery[0]}
                 alt={project.name}
                 fill
                 sizes="220px"
                 fetchPriority="high"
                 className="object-cover"
               />
-
-              {project.isFinished ? (
-                <span className="absolute left-2 top-2 font-bold text-[1.25rem] text-[#008000] border border-[#008000] bg-[#80EF80] rounded-full py-.5 px-1.5 shadow">
-                  ☑
-                </span>
-              ) : (
-                <span className="absolute left-2 top-2 font-bold text-[1.25rem] text-[#777700] border border-[#777700] bg-[#FFFF70] rounded-full py-.5 px-1.5 shadow">
-                  ☐
-                </span>
-              )}
             </div>
 
             <div className="p-6 flex flex-col flex-1">
@@ -58,13 +57,12 @@ export default function Projects({ id }: LinkProps) {
                 {project.name}
               </h3>
 
-              <p className="leading-relaxed line-clamp-3 mb-6">
+              <p className="leading-relaxed line-clamp-2 mb-6">
                 {project.description}
               </p>
 
-              <Link
-                href={project.link}
-                target="_blank" rel="noopener noreferrer"
+              <button
+                onClick={() => setSelectedProject(project)}
                 className="
                   mt-auto inline-flex items-center justify-center gap-2 
                   font-semibold text-dark-background
@@ -72,13 +70,20 @@ export default function Projects({ id }: LinkProps) {
                   duration-300 transition-all 
                   hover:opacity-80 hover:gap-3 hover:-translate-y-[1.5px]"
               >
-                Visitar projeto
+                Ver projeto
                 <span>→</span>
-              </Link>
+              </button>
             </div>
           </div>
         ))}
       </div>
+
+      {selectedProject && (
+        <ProjectModal 
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </section>
   );
 }

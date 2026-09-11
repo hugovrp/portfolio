@@ -1,6 +1,5 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import AosSetup from "@/components/AosSetup";
 import { roboto, ibmPlexSerif } from "./fonts";
 
 export const metadata: Metadata = {

@@ -1,8 +1,8 @@
 "use client"
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
 import { links } from "@/app/page";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,13 +27,13 @@ export default function Header() {
         />
       )}
 
-      <div 
-        data-aos="fade-down" data-aos-once="true"
-        className="relative flex justify-between container mx-auto pt-2 items-center"
-      >
-        <div className="cursor-pointer font-bold text-[2rem]">
+      <div className="relative flex justify-between container mx-auto pt-2 items-center">
+        <div 
+          data-aos="fade-down" data-aos-once="true"
+          className="cursor-pointer font-bold text-[2rem]"
+        >
           <Link 
-            href={"#about-sec"} 
+            href={"/"} 
             onClick={() => setIsOpen(false)}
           >
             HR
