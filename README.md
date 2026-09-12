@@ -1,6 +1,6 @@
 # 🚀 Hugo Rodrigues — Portfólio
 
-> Esse é o repositório do meu portfólio pessoal, criado para apresentar meus projetos, habilidades e experiência profissional. O objetivo é documentar minha jornada de apredizado.
+Esse é o repositório do meu portfólio pessoal, criado para apresentar meus projetos, habilidades e experiência profissional. O objetivo é documentar minha jornada de apredizado.
 
 🔗 **Acesse:** [hugovrp.dev](https://hugovrp.dev)
 
