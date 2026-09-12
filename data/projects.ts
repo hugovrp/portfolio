@@ -35,6 +35,28 @@ export const projects = [
   },
   {
     gallery: [
+      '/projects/cao-q-late/home.jpg',
+      '/projects/cao-q-late/dashboard.jpg',
+      '/projects/cao-q-late/home-services.jpg',
+      '/projects/cao-q-late/home-provision_services.jpg',
+      '/projects/cao-q-late/report.jpg',
+    ],
+    name: 'Cão Q-Late',
+    description:
+      'Sistema web desenvolvido em Java para gerenciar clientes, pets, serviços, agendamentos e o controle financeiro de petshops.',
+    modalDescription:
+      'Sistema de gerenciamento para petshops desenvolvido em Java, com funcionalidades para cadastro de clientes e pets, controle de serviços, agendamentos e gestão financeira. O projeto conta com validação de disponibilidade, aplicação automática de descontos e relatórios de atendimentos, oferecendo uma solução completa para a administração do negócio.',
+    topics: ['Java', 'PostgreSQL', 'Docker'],
+    link: 'https://github.com/hugovrp/cao-q-late',
+    highlights: [
+      'Gestão de clientes, pets, serviços e agendamentos.',
+      'Aplicação automática de descontos e regras de negócio.',
+      'Relatórios financeiros e histórico completo de atendimentos.',
+      'Arquitetura MVC com Java, PostgreSQL e Apache Tomcat.'
+    ],
+  },
+  {
+    gallery: [
       '/projects/weather-forecast/weather1.png',
       '/projects/weather-forecast/weather2.png'
     ],
