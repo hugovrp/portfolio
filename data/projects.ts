@@ -74,4 +74,20 @@ export const projects = [
       'Design responsivo e moderno.'
     ],
   },
+  {
+    gallery: ['/projects/tsi-rpc/interface.png'],
+    name: 'TSI-RPC',
+    description:
+      'Sistema distribuído desenvolvido em Python para execução remota de operações matemáticas, utilizando múltiplos servidores, cache inteligente e integração com IA.',
+    modalDescription:
+      'Sistema distribuído desenvolvido em Python com arquitetura multi-servidor para processamento remoto de operações matemáticas. O projeto utiliza um Name Server para descoberta automática de serviços, cache multinível para otimização de desempenho e uma interface gráfica inspirada em calculadoras reais. Também integra o Google Gemini para resolução de problemas matemáticos em linguagem natural.',
+    topics: ['Python', 'RPC', 'TCP / UDP'],
+    link: 'https://github.com/hugovrp/tsi-rpc',
+    highlights: [
+      'Arquitetura RPC distribuída com múltiplos servidores.',
+      'Processamento paralelo utilizando multiprocessing.',
+      'Cache em memória e disco com tolerância a falhas.',
+      'Integração com IA e web scraping em tempo real.'
+    ],
+  },
 ];

@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { LinkProps } from "@/app/page";
@@ -35,9 +34,10 @@ export default function Projects({ id }: LinkProps) {
                 src={project.gallery[0]}
                 alt={project.name}
                 fill
-                sizes="220px"
+                quality={90}
                 fetchPriority="high"
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
 
